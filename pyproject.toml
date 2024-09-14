@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "TextSummarizer"
+version = "0.0.0"
+description = "A python package for text-summarizer"
+readme = "README.md"
+requires-python = ">=3.7"
+authors = [
+    { name = "rahulp", email = "rahulpradeep4218@gmail.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/rahulp/Text-Summarizer-Project"
+BugTracker = "https://github.com/rahulp/Text-Summarizer-Project/issues"
+
+[tool.setuptools]
+packages = ["TextSummarizer"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+TextSummarizer = ["*"]
